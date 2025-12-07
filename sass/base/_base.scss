@@ -1,0 +1,119 @@
+/* Reset and base styles  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ffffff;
+    background-color: #14110e;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    padding: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+
+    &:hover,
+    &:focus {
+        color: #c99e71;
+    }
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Grid styles */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+/* Media */
+
+/* Tablet */
+@media (max-width: 1199px) {
+    .container {
+        width: 900px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 899px) {
+    .container {
+        width: 600px;
+    }
+}
+
+/* Mobile XS */
+@media (max-width: 599px) {
+    .container {
+        width: 320px;
+    }
+}

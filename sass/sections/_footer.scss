@@ -1,0 +1,159 @@
+.footer {
+    padding-top: 70px;
+    background-color: #14110e;
+
+    &__top {
+        padding-bottom: 72px;
+
+        .container {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                width: 72px;
+                height: 60px;
+                margin-right: 36px;
+
+                /* Mobile */
+                @media (max-width: 899px) {
+                    display: none;
+                }
+            }
+
+            /* Mobile */
+            @media (max-width: 899px) {
+                justify-content: center;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            padding-bottom: 40px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-grow: 1;
+        margin-right: 82px;
+        font-size: 20px;
+        line-height: 1;
+
+        > * {
+            /* Tablet */
+            @media (max-width: 1199px) {
+                margin-top: 10px;
+            }
+        }
+
+        > * + * {
+            margin-left: 40px;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                margin-left: 0;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 120px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            display: none;
+        }
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__input {
+        width: 328px;
+        height: 72px;
+        padding-left: 28px;
+        padding-right: 70px;
+        line-height: 72;
+        color: #ffffff;
+        background-color: #1c1814;
+        border-radius: 36px;
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            width: 290px;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        transform: translateY(-50%) rotate(180deg);
+        background-color: #c99e71;
+        border-radius: 50%;
+        transition: background-color 0.2s linear;
+
+        g {
+            stroke: #ffffff;
+        }
+
+        &:hover {
+            background-color: #e9b883;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        background-color: #1c1814;
+
+        > * {
+            font-size: 14px;
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 30px;
+    }
+}

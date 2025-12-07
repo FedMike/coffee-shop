@@ -1,0 +1,226 @@
+.history {
+    padding-top: 140px;
+    padding-bottom: 70px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}
+
+.history__top {
+    display: flex;
+    column-gap: 36px;
+    justify-content: center;
+    margin-bottom: 140px;
+    font-family: "Righteous";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+
+    & > * {
+        width: 366px;
+
+        & > * + * {
+            margin-top: 24px;
+
+            /* Mobile */
+            @media (max-width: 899px) {
+                margin-top: 20px;
+            }
+        }
+
+        & > * > span {
+            color: #c99e71;
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            max-width: 270px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            width: 100%;
+            max-width: unset;
+            // text-align: center;
+        }
+    }
+
+    & > * + * {
+        /* Mobile */
+        @media (max-width: 899px) {
+            margin-top: 25px;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        column-gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+.history__top-img {
+    width: 366px;
+    height: 420px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 270px;
+        height: 310px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 100%;
+    }
+}
+
+.history__bottom {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+
+    & > * {
+        width: 298px;
+        height: 635px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            // height: 635px;
+            object-fit: cover;
+
+            /* Tablet */
+            // @media (max-width: 1199px) {
+            //     height: 532px;
+            // }
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            width: 220px;
+            height: 472px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            display: none;
+        }
+    }
+
+    & > *:first-child {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+        img {
+            height: 302px;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                height: 224px;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            row-gap: 24px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            display: none;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        column-gap: 26px;
+    }
+}
+
+.history__bottom-description {
+    width: 510px;
+    padding: 120px 55px 120px;
+    background-color: #1c1814;
+    overflow-y: scroll;
+
+    .title-2 {
+        margin-bottom: 12px;
+    }
+
+    .title-3 {
+        margin-bottom: 36px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            margin-bottom: 24px;
+        }
+
+        /* Mobile XS */
+        @media (max-width: 599px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .text {
+        text-transform: capitalize;
+        opacity: 0.6;
+
+        & > * + * {
+            margin-top: 15px;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 2px; /* ширина всей полосы прокрутки */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #1c1814; /* цвет зоны отслеживания */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #3b332a; /* цвет бегунка */
+        border-radius: 50px; /* округлось бегунка */
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 378px;
+        padding: 70px 30px 70px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: block;
+        width: 100%;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 30px;
+    }
+}

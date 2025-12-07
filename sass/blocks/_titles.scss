@@ -1,0 +1,75 @@
+.title-1 {
+    font-family: Righteous;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.3;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 50px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 40px;
+    }
+}
+
+.title-2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #c99e71;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 16px;
+    }
+}
+
+.title-3 {
+    font-family: "Righteous";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.3;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 42px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 34px;
+    }
+}
+
+.title-4 {
+    font-family: "Righteous";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.header-group {
+    text-align: center;
+
+    .title-2 {
+        margin-bottom: 12px;
+    }
+
+    .title-3 {
+        margin-bottom: 56px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            margin-bottom: 34px;
+        }
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            margin-bottom: 28px;
+        }
+    }
+}
